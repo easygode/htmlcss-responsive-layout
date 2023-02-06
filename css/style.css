@@ -28,6 +28,8 @@ ul {
     --bianco: #ffffff;
     --viola: #9792e4;
     --nero: #000000;
+    --violino: #cbc9f1;
+    --ocra: #fdc15f;
 }
 
 button {
@@ -286,7 +288,45 @@ About us
 Get started
 ------------------*/
 
+.get-started {
+    background-color: var(--viola);
+    text-align: center;
+    margin: 5vh 0 5vh 0;
+}
 
+.get-started h5{
+color: var(--violino);
+font-size: 15px;
+padding: 4vh 0 4vh 0;
+}
+
+.get-started h6{
+    color: var(--bianco);
+    font-size: 25px;
+    padding: 3vh 0 3vh 0;
+    }
+
+#free {
+    color: var(--ocra) ;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.get-started p {
+    color: var(--bianco);
+    font-size: 18px;
+    padding: 3vh 0 3vh 0;
+    line-height: 30px;
+}
+
+.get-started button {
+    background-color: var(--bianco);
+    color: var(--viola);
+    width: 80%;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 1.5vh 0 1.5vh 2vh;
+}
 /*-----------------
 Footer
 ------------------*/
