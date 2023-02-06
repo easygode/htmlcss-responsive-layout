@@ -11,51 +11,38 @@ Reset
 /*-----------------
 Common
 ------------------*/
-* {
-    display: block;
-}
 
 ul {
     list-style: none;
 }
+
 
 .flex {
     display: flex;
 }
 
 :root {
-    --blu: #0983ff;
+    --blu: #0084fd;
     --bluscuro: #191063;
-    --bluchiaro: #7bb4ee;
+    --bluchiaro: #b5ddff;
     --bianco: #ffffff;
     --viola: #9792e4;
     --nero: #000000;
 }
 
 button {
-        background-color: var(--bianco);
         align-items: center;
-        text-decoration: none;
         border: none;
-        color: #ffffff;
-        padding: 1vh;
+        padding: 8px;
         font-size: 10px;
-}
-
-a:hover {
-    color: var(--bluscuro);
+        border-radius: 15px;
 }
 
 /*-----------------
 Typo
 ------------------*/
 body {
-font-family: 'Roboto', sans-serif;
-}
-
-p {
-    font-size: 50px;
-    text-align: center;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 /*-----------------
@@ -65,24 +52,24 @@ Header
 .header {
     background-color: var(--blu);
     justify-content: space-between;
+    padding: 1.5vh;
     align-items: center;
-    padding: 2vh;
 }
 
+header nav {
+    width: 100%;
+}
 
 ul a {
     text-decoration: none;
-    padding: 0 2vh 0 2vh;
+    padding: 0 1vh 2vh 1vh;
     color: var(--bianco);
 }
-.menu li :last-child {
-    border-radius: 50%;
+.menu button {
+    background-color: var(--bianco);
     color: var(--nero);
-    font-size: 16px;
-    margin-top: -2vh;
+    font-size: 14px;
 }
-
-
 
 header i {
     font-size: 30px;
@@ -93,7 +80,7 @@ header i {
 Main
 ------------------*/
 
-.main-sezione1 {
+.main-demo {
     background-color: var(--bianco);
     margin: 7vh 5vh 7vh 5vh;
 }
@@ -104,17 +91,26 @@ Get and Features
 ------------------*/
 
 .get, .cleancode, .webdesign, .development, .branding {
-    margin: 10vh 5vh 5vh 10vh auto;
+
     margin-bottom: 5vh;
     background-color: var(--bluchiaro);
     width: 100%;
     align-content: center;
-    border-radius: 10%;
     padding: 5vh;
+    border-radius: 15px;
+}
+
+#get {
+    background-color: var(--blu);
+    color: var(--bianco);
+    font-size: 18px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 3vh 0 3vh 0;
 }
 
 .feat {
-    font-size: 200px;
+    font-size: 120px;
     color: var(--blu);
     text-align: center;
 }
@@ -125,28 +121,21 @@ img {
 }
 
 .get h1 {
+    margin: 0 auto;
     color: var(--blu);
     font-weight: 900;
-    font-size: 80px;
+    font-size: 19px;
     text-align: center;
-    padding: 3vh;
-}
-.get button {
-    background-color: var(--blu);
-    color: var(--bianco);
-    margin: 0 auto;
-    margin-top: 3vh;
-    border-radius: 50%;
+    padding-bottom: 2vh;
 }
 
-.main-sezione1 h2 {
-font-size: 80px;
+.main-demo h2 {
+font-size: 22px;
+font-weight: 900;
 padding: 5vh 0 5vh 0;
 color: var(--blu);
 text-align: center;
 }
-
-
 
 /*-----------------
 Planning
@@ -156,15 +145,17 @@ Planning
     padding: 5vh 0 5vh 0;
 }
 
+
 .planning2 {
     background-color: var(--bianco);
     margin: 7vh 5vh 7vh 5vh;
+    margin-bottom: 2vh;
     border-radius: 30px;
 }
 
 .planning h2 {
-    font-size: 80px;
-    text-align: center;
+    font-size: 35px;
+    color: var(--nero);
     padding: 5vh 0 5vh 0;
 }
 
@@ -174,46 +165,85 @@ Testimonials
 
 .testimonials {
     background-color: var(--bianco);
+    border-radius: 20%;
 }
 
 .testimonials h3, .testimonials p {
  text-align: center;
- font-size: 30px;
- margin-top: 5vh;
+ font-size: 25px;
+ margin-top: 2vh;
 }
 
 .testimonials h4 {
     text-align: center;
     font-size: 40px;
     color: var(--viola);
-   }
+}
 
 .testimonials img {
- border-radius: 80%;
- width: 30%;
- height: 60%;
+ border-radius: 50%;
+ width: 250px;
+ height: 250px;
  margin: 0 auto;
 }
 
 .testimonials p {
     padding: 5vh 0 5vh 0;
-    color: var(--bianco);
+    color: var(--nero);
 }
 
 .test1, .test2, .test3 {
     background-color: var(--viola);
     margin: 2vh 5vh 7vh 5vh;
-    padding: 5vh 0 5vh 0;
-
+    padding: 5vh;
 }
 
 /*-----------------
 Benefits
 ------------------*/
 
+.benefits {
+    background-color: var(--viola);
+}
+
+.benefit-box {
+    background-color: var(--bianco);
+    border-radius: 20px;
+    margin: 2vh 5vh 7vh 5vh;
+    padding: 5vh;
+}
+
+.benefits h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.benefici {
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--viola);
+}
+
+.benefits h4 {
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--viola);
+    margin: 1vh 0 1vh 0;
+   }
+
+.benefits button {
+    background-color: var(--viola);
+    color: white;
+    width: 50%;
+    font-size: 15px;
+    margin: 1.5vh 0 1.5vh 0;
+}
+
 /*-----------------
 About us
 ------------------*/
+
 
 /*-----------------
 Get started
