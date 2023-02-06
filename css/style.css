@@ -28,7 +28,7 @@ ul {
     --bluscuro: #191063;
     --bluchiaro: #7bb4ee;
     --bianco: #ffffff;
-    --viola: #7d4e96;
+    --viola: #9792e4;
     --nero: #000000;
 }
 
@@ -55,6 +55,7 @@ font-family: 'Roboto', sans-serif;
 
 p {
     font-size: 50px;
+    text-align: center;
 }
 
 /*-----------------
@@ -104,7 +105,7 @@ Get and Features
 
 .get, .cleancode, .webdesign, .development, .branding {
     margin: 10vh 5vh 5vh 10vh auto;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     background-color: var(--bluchiaro);
     width: 100%;
     align-content: center;
@@ -150,6 +151,21 @@ text-align: center;
 /*-----------------
 Planning
 ------------------*/
+.planning {
+    background-color: var(--viola);
+}
+
+.planning2 {
+    background-color: var(--bianco);
+    margin: 7vh 5vh 7vh 5vh;
+    border-radius: 30px;
+}
+
+.planning h2 {
+    font-size: 80px;
+    text-align: center;
+    padding: 5vh 0 5vh 0;
+}
 
 /*-----------------
 Testimonials
