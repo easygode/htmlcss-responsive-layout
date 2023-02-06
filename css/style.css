@@ -11,7 +11,38 @@ Reset
 /*-----------------
 Common
 ------------------*/
+ul {
+    list-style: none;
+}
 
+.flex {
+    display: flex;
+}
+
+:root {
+    --blu: #0983ff;
+    --bianco: #ffffff;
+    --viola: #7d4e96;
+    --nero: #000000;
+}
+
+button {
+        background-color: var(--bianco);
+        align-items: center;
+        text-decoration: none;
+        border: none;
+        color: #ffff;
+        padding: 1vh;
+        font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--blu);
+}
 
 /*-----------------
 Typo
@@ -24,6 +55,33 @@ font-family: 'Manjari', sans-serif;
 Header
 ------------------*/
 
+.header {
+    background-color: var(--blu);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 10vh 2vh 2vh;
+}
+
+.logo {
+    padding-left: 10vh;
+}
+
+.menu li :last-child {
+    border-radius: 50%;
+    color: var(--nero);
+    font-size: 16px;
+    margin-top: -2vh;
+}
+
+.menu li a {
+    padding: 0 2vh 0 2vh;
+    color: var(--bianco);
+}
+
+header i {
+    font-size: 30px;
+    color: var(--bianco)
+}
 
 /*-----------------
 Main
@@ -63,4 +121,12 @@ Footer
 /*-----------------
 Resposinvita
 ------------------*/
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        display: none;
+    }
+    
+}
 
