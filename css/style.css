@@ -291,7 +291,7 @@ Get started
 .get-started {
     background-color: var(--viola);
     text-align: center;
-    margin: 5vh 0 5vh 0;
+    margin: 5vh 0 0 0;
 }
 
 .get-started h5{
@@ -330,7 +330,20 @@ padding: 4vh 0 4vh 0;
 /*-----------------
 Footer
 ------------------*/
+footer {
+    background-color: var(--nero);
+    font-size: 18px;
+    color: var(--bianco);
+    padding: 5vh 3vh 5vh 3vh;
+}
 
+footer p {
+    margin: 5vh 0 5vh 0;
+}
+
+footer a {
+    color: var(--viola)
+}
 
 /*-----------------
 Resposinvita
