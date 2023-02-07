@@ -382,6 +382,16 @@ Resposinvita
 .test {
     display: flex;
     align-items: center;
+
 }
 
+.test1, .test2, .test3 {
+    width: calc(100% / 3 - 2vh);
+    margin: 0 auto;
+    height: 50vh;
+}
+
+.img-test1 img, .img-test2 img, .img-test3 img {
+    width: 150px;
+    height: 150px;
 }
